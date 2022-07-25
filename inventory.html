@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Inventario</title>
+     <script>
+        window.dataLayer = window.dataLayer || [];
+            
+        dataLayer.push({
+         'event': 'pageview',
+         'pagePath': window.location.pathname,
+         'pageTitle': document.title,
+         'userName': sessionStorage.getItem("session-username")
+        });
+    </script>
     <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -10,7 +21,6 @@
     <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Inventario</title>
     <link rel="stylesheet" type="text/css" href="css/sample-app-web.css">
 
 </head>
